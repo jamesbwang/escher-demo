@@ -92,14 +92,14 @@ THE SOFTWARE.
              // get the parent node, and add the image
              d3.select(circle.node().parentNode)
                  // insert the image before the text
-               .insert('image', 'text')
+               .insert('image')
                .attr('transform', 'translate('
                                 + (data.x - img_size / 2) + ','
                                 + (data.y - img_size / 2) + ')')
                .attr('width', img_size)
                .attr('height', img_size)
                .attr('preserveAspectRatio', 'xMinYMin meet')
-               .attr('xlink:href', 'structure_imgs/' + remove_compartment(data.bigg_id) + '.png');
+               .attr('xlink:href', "escher-resources/" + remove_compartment(data.bigg_id) + ".svg");
              // remove the metabolite circle
              circle.remove();
          });
