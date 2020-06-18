@@ -2,3 +2,6 @@
 *.pyc
 private_token.py
 .DS_Store
+structures/escher-resources/*
+structures/structure_imgs/*
+structures/test_img/*
